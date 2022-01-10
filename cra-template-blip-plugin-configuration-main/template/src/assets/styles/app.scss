@@ -1,0 +1,184 @@
+@import 'tachyons';
+@import '~blip-toolkit/dist/scss/main';
+@import '~blip-ds/dist/collection/styles/_fonts.scss';
+@import '~blip-ds/dist/collection/styles/_colors.scss';
+
+// plugin template scss
+@import 'variables';
+@import 'mixins';
+@import 'utilities';
+
+body {
+    margin: 0;
+    font-family: $font-family;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.App-logo {
+    height: 10rem;
+    pointer-events: none;
+}
+
+.sizePlugin{
+    height: 700px;
+}
+
+.main {
+    margin: auto;
+    margin-top: 1%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.configuration {
+    margin: auto;
+    margin-top: 1%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+// .container-form{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     float: left;
+//     justify-content: space-between;
+//     margin-left:  32px;
+// }
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    float: left;
+    justify-content: space-between;
+}
+
+.container-form-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    float: left;
+    justify-content: space-between;
+    margin-left:  32px;
+}
+
+.container-form-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    float: right;
+    justify-content: space-between;
+}
+
+.bp-tabs-container .bp-tab-content {
+    padding-top: 20px;
+  }
+
+.container-form-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    float: right;
+    justify-content: space-between;
+}
+
+.titleForm {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15.3546px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #3A4A65;
+    font-family: sans-serif;
+}
+
+.weekDay{
+    width: 44.55px;
+    height: 53px;
+    left: 281px;
+    top: 524px;
+    background: #FFFFFF;
+    border: 1px solid #3F7DE8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 1%;
+    margin-top: 0.5%;
+    font-weight: bold;
+  }
+  
+  .weekDaySelected{
+    width: 44.55px;
+    height: 53px;
+    left: 281px;
+    top: 524px;
+    background: #3F7DE8;
+    border: 1px solid #3F7DE8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 2%;
+    margin-top: 0.5%;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+
+  .blipSelect{
+    width: 312px;
+    margin-bottom: 25px;
+    margin-top: 1%;
+    border: 1px solid #3F7DE8;
+    border-radius: 8px;
+  }
+
+  .single-line-time{
+    display: flow-root;
+    margin-bottom: 0.75%;
+    width: 300px;
+  }
+
+  .mb25{
+      margin-bottom: 25px;
+  }
+
+  .mt1{
+      margin-top: 1%;
+  }
+
+  .rightEnd{
+    display: flex; 
+    justify-content: flex-end;
+  }
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: Heartbit infinite 4s linear;
+    }
+}
+
+@keyframes Heartbit {
+    50% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.3;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
